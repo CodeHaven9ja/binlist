@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Thompson Edolo"]
   spec.email         = ["verygreenboi@live.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "http://www.binlist.net"
-  end
-
   spec.summary       = "BIN checker"
   spec.description   = "Ruby gem for Binlist.net"
   spec.homepage      = "http://www.binlist.net"
