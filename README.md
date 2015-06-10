@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/binlist.svg)](http://badge.fury.io/rb/binlist)
 # Binlist
 
 Binlist is a simple gem for searching Issuer Identification Numbers (IIN). The first 6 digits of a credit card number are known as the Issuer Identification Number (IIN), previously known as Bank Identification Number (BIN). These identify the institution that issued the card to the card holder. 
