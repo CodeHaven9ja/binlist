@@ -1,8 +1,11 @@
 # Binlist
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/binlist`. To experiment with that code, run `bin/console` for an interactive prompt.
+Binlist is a simple gem for searching Issuer Identification Numbers (IIN). The first 6 digits of a credit card number are known as the Issuer Identification Number (IIN), previously known as Bank Identification Number (BIN). These identify the institution that issued the card to the card holder. 
 
-TODO: Delete this and the text above, and describe your gem
+This gem queries [Binlist.net](http://Binlist.net) public REST api.
+
+### Limits
+Due to the high volume of queries [Binlist.net](http://Binlist.net) has implemented a throttling mechanism, which allows at most 10,000 queries per hour. After reaching this hourly quota, all your requests result in HTTP 403 (Forbidden) until it clears up on the next roll over. 
 
 ## Installation
 
@@ -22,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Binlist.find(######)
 
 ## Development
 
@@ -32,7 +35,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/binlist/fork )
+1. Fork it ( https://github.com/CodeHaven9ja/binlist/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
