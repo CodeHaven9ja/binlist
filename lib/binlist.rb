@@ -6,6 +6,6 @@ module Binlist
 	base_uri "binlist.net" 
 
 	def self.find(bin)
-		get("/json/#{bin}")
+		get("/json/#{bin}").parsed_response
 	end
 end
