@@ -10,6 +10,6 @@ module Binlist
 	# @return [Net::HTTPResponse] A subclass of Net::HTTPResponse, e.g. Net::HTTPOK 
 
 	def self.find(bin)
-		get("/json/#{bin}")
+		get("/#{bin}")
 	end
 end
